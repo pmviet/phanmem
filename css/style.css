@@ -1,0 +1,202 @@
+body{
+	margin:0;
+	padding:0;
+	color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+.modal-header{
+	color:#736424;
+	font-weight:bold;
+	font-size:20px;
+	padding:10px;
+}
+.widget-user-2 .widget-user-image>img{
+	width:100px;
+}
+.widget-user-2 .widget-user-username, .widget-user-2 .widget-user-desc{
+	margin-left: 125px;
+}
+.bg-yellow, .callout.callout-warning, .alert-warning, .label-warning, .modal-warning .modal-body{
+	background:#f1c50a;
+	color:#4c4c4c;
+}
+.hideDiv{
+	display:none !important;
+}
+
+.khungtable{
+	overflow-y: overlay;
+}
+.tabheader{
+	font-weight:bold;
+}
+.select2-container .select2-selection--single{
+	height:40px !important;
+	padding: 5px !important;
+}
+.tong {
+    font-weight: bold;
+    color: #ff4646;
+}
+.dataTables_length {
+    display: inline-block;
+	padding-right: 10px;
+}
+.dataTables_filter{
+    text-align: right;
+    display: inline-block;
+    float: right;
+}
+.invoice-box{
+	background: white;
+}
+.trenbang{
+	display:inline-block;
+	margin-bottom:10px;
+	width:100%
+}
+.sotienban{
+    position: absolute;z-index: 999;right: 0px;background: #0095ffb8;padding: 5px; color: #fff; cursor:pointer; min-width: 60px; text-align: right;
+}
+.title_sp{
+    text-align:center; font-size: 18px; font-weight: bold; color: #d81b60; padding:10px;
+    position: absolute;
+    z-index: 99;
+    bottom: 0px;
+    background: #ffffffc7;
+    width: 100%;
+}
+.vuotmh{
+    display:none;
+}
+.todo-list>li{
+    border-bottom: 2px solid #e9ecef;
+}
+@media (min-width: 1000px){
+.modal-dialog {
+    width: 900px;
+	max-width: initial;
+    margin: 30px auto;
+}
+
+}
+@media (min-width: 1300px){
+.modal-dialog {
+    width: 1100px;
+	max-width: initial;
+    margin: 30px auto;
+}
+}
+@media (max-width: 999px){
+.vuotmh{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1048;
+    background: #28a745b8;
+    height: 50px;
+    font-size: 21px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+    color: #fff;
+    display:block;
+}
+}
+@media (max-width: 768px){
+.small-box p {
+    font-size: 18px !important;
+}
+}
+.invoice-box {
+	padding: 30px;
+	border: 1px solid #eee;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+	font-size: 16px;
+	line-height: 24px;
+	font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+	color: #555;
+	line-height: normal;
+    }
+    
+    .invoice-box table {
+        width: 100%;
+        line-height: inherit;
+        text-align: left;
+    }
+    
+    .invoice-box table td {
+        padding: 5px;
+        vertical-align: top;
+    }
+    
+    .invoice-box table tr td:nth-child(2) {
+        text-align: right;
+    }
+    
+    .invoice-box table tr.top table td {
+        padding-bottom: 20px;
+    }
+    
+    .invoice-box table tr.top table td.title {
+        font-size: 45px;
+        line-height: 45px;
+        color: #333;
+    }
+    
+    .invoice-box table tr.information table td {
+        padding-bottom: 40px;
+    }
+    
+    .invoice-box table tr.heading td {
+        background: #eee;
+        border-bottom: 1px solid #ddd;
+        font-weight: bold;
+    }
+    
+    .invoice-box table tr.details td {
+        padding-bottom: 20px;
+    }
+    
+    .invoice-box table tr.item td{
+        border-bottom: 1px solid #eee;
+    }
+    
+    .invoice-box table tr.item.last td {
+        border-bottom: none;
+    }
+    
+    .invoice-box table tr.total td:nth-child(2) {
+        border-top: 2px solid #eee;
+        font-weight: bold;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .invoice-box table tr.top table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+        
+        .invoice-box table tr.information table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
+    
+    /** RTL **/
+    .rtl {
+        direction: rtl;
+        font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    }
+    
+    .rtl table {
+        text-align: right;
+    }
+    
+    .rtl table tr td:nth-child(2) {
+        text-align: left;
+    }
+	
