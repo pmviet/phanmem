@@ -1,0 +1,18 @@
+<?php
+$link=$_GET['link'];
+$urlweb=$_SERVER['HTTP_HOST'];
+$root=$_SERVER['DOCUMENT_ROOT'];
+$duoifile = pathinfo($link, PATHINFO_EXTENSION);
+if(($duoifile=='php')||($duoifile=='js')||($duoifile=='css')||($duoifile=='html')||($duoifile=='txt')||($duoifile=='py')||($duoifile=='json')||($duoifile=='json')||($duoifile=='json')){
+$fp = fopen("$root/$link", "r");//mở file ở chế độ đọc
+echo '<textarea class="form-control" id="formdoc" rows="3" style="width:100%; height: calc(100vh - 30px);" >';
+while (! feof ($fp)) {
+    $c = fgetc($fp);
+    echo htmlentities($c);
+}
+echo '</textarea> <a download="" target="_blank" href="'.$link.'"><button type="button" class="btn btn-primary btn-sm">Tải xuống</button></a>';
+fclose($fp);
+}else{
+    echo "<h2 style='text-align: center;'>Không thể đọc được định dạng này, quý khách vui lòng tải xuống để xem <br /><a download='' target='_blank' href='$link'><button type='button' class='btn btn-primary btn-sm'>Tải xuống</button></a></h2>";
+}
+?>
