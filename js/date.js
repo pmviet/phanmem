@@ -15,8 +15,8 @@ $(document).ready(function() {
       applyClass: 'btn-small btn-primary',
       cancelClass: 'btn-small',
       locale: {
-        format: 'DD/MM/YYYY', // ✅ Đặt đúng vị trí
-        separator: ' đến ',
+        format: 'DD/MM/YYYY',
+        separator: ' - ',
         applyLabel: 'Xem',
         cancelLabel: 'Hủy',
         fromLabel: 'Từ',
